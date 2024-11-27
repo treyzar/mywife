@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Аринуся, я тебя очень очень сильно люблю, кликни на кнопку нижу</h1>
+    <button id = "btn">Кликай жена</button>
+    <script>
+        let btn = document.getElementById('btn')
+        btn.addEventListener('click', function(){
+            let conf = confirm('Готова стать моей женой?')
+            if (conf === true){
+                alert('Теперь ты моя жена')
+            }
+            else{
+                alert('Такого варианта нет назад(Нажмпи на кнопку еще раз)')
+
+            }
+        })
+    </script>
+</body>
+</html>
